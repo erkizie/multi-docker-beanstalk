@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: docker build -t cygnetops/react-test -f ./client/Dockerfile.dev ./client
+      - run: docker build -t erkizie/react-test -f ./client/Dockerfile.dev ./client
       - run: docker run -e CI=true erkizie/react-test npm test
