@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - main
-needs: [run-tests]
 
 jobs:
   build-and-push:
